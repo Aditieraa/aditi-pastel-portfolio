@@ -1,0 +1,44 @@
+
+export const About = () => {
+  return (
+    <section id="about" className="py-20 bg-white/50">
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
+            About Me
+          </h2>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Hi! I'm Aditi Haresh Talekar, an IT Engineer passionate about building elegant and intuitive digital experiences. 
+                With strong technical foundations, creative UI/UX skills, and leadership abilities, I craft solutions that blend design with function.
+              </p>
+              <div className="space-y-4">
+                <h3 className="text-2xl font-semibold text-purple-600">Education</h3>
+                <div className="space-y-3">
+                  <div className="p-4 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg">
+                    <h4 className="font-semibold text-gray-800">Bachelor of Engineering in Information Technology</h4>
+                    <p className="text-gray-600">Datta Meghe College of Engineering, Airoli</p>
+                    <p className="text-sm text-gray-500">Mumbai University • 2026 (Expected)</p>
+                  </div>
+                  <div className="p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg">
+                    <h4 className="font-semibold text-gray-800">Diploma in Information Technology</h4>
+                    <p className="text-gray-600">Vidyalankar Polytechnic, Wadala</p>
+                    <p className="text-sm text-gray-500">2023 • 89.19%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-purple-200 via-pink-200 to-blue-200 flex items-center justify-center">
+                <div className="w-72 h-72 rounded-full bg-white/50 flex items-center justify-center text-8xl font-bold text-purple-500">
+                  AT
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
