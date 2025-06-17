@@ -28,8 +28,12 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-purple-100/50 via-pink-100/50 to-blue-100/50"></div>
       <div className="text-center z-10 animate-fade-in">
         <div className="mb-8">
-          <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-purple-200 to-pink-200 flex items-center justify-center text-6xl font-bold text-purple-600">
-            AT
+          <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden shadow-lg">
+            <img 
+              src="https://i.ibb.co/vvdJJH5Z/profile-image.jpg" 
+              alt="Aditi Haresh Talekar"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 bg-clip-text text-transparent">
