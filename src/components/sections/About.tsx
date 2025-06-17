@@ -30,10 +30,12 @@ export const About = () => {
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-purple-200 via-pink-200 to-blue-200 flex items-center justify-center">
-                <div className="w-72 h-72 rounded-full bg-white/50 flex items-center justify-center text-8xl font-bold text-purple-500">
-                  AT
-                </div>
+              <div className="w-80 h-80 rounded-full overflow-hidden shadow-lg">
+                <img 
+                  src="https://i.ibb.co/vvdJJH5Z/profile-image.jpg" 
+                  alt="Aditi Haresh Talekar"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
