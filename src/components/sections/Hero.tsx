@@ -24,9 +24,7 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-purple-100/50 via-pink-100/50 to-blue-100/50"></div>
       <div className="text-center z-10 animate-fade-in">
         <div className="mb-8">
-          <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden shadow-lg">
-            
-          </div>
+          
         </div>
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 bg-clip-text text-transparent">
           Hi, I'm Aditi Haresh Talekar
