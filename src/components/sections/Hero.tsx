@@ -1,12 +1,9 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-
 export const Hero = () => {
   const [text, setText] = useState("");
   const fullText = "IT Engineer | Creative Technologist | Developer";
-
   useEffect(() => {
     let index = 0;
     const timer = setInterval(() => {
@@ -16,27 +13,19 @@ export const Hero = () => {
         clearInterval(timer);
       }
     }, 100);
-
     return () => clearInterval(timer);
   }, []);
-
   const scrollToAbout = () => {
     document.getElementById("about")?.scrollIntoView({
       behavior: "smooth"
     });
   };
-
-  return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+  return <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-purple-100/50 via-pink-100/50 to-blue-100/50"></div>
       <div className="text-center z-10 animate-fade-in">
         <div className="mb-8">
           <div className="w-48 h-48 mx-auto rounded-full overflow-hidden shadow-lg mb-8">
-            <img 
-              src="/lovable-uploads/df48652d-a721-4551-aa5b-b936d6619136.png" 
-              alt="Aditi Haresh Talekar"
-              className="w-full h-full object-cover"
-            />
+            
           </div>
         </div>
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 bg-clip-text text-transparent">
@@ -63,6 +52,5 @@ export const Hero = () => {
       <button onClick={scrollToAbout} className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ArrowDown className="w-6 h-6 text-purple-400" />
       </button>
-    </section>
-  );
+    </section>;
 };
