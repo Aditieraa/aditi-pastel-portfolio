@@ -23,7 +23,7 @@ export const Contact = () => {
     try {
       await emailjs.send(
         'service_lhgwvyf', // Service ID
-        'template_adh2az4', // Template ID
+        'template_pc43txc', // Template ID
         {
           from_name: formData.name,
           from_email: formData.email,
