@@ -32,7 +32,7 @@ export const About = () => {
             <div className="flex justify-center">
               <div className="w-80 h-80 rounded-full overflow-hidden shadow-lg">
                 <img 
-                  src="https://i.ibb.co/vvdJJH5Z/profile-image.jpg" 
+                  src="/lovable-uploads/df48652d-a721-4551-aa5b-b936d6619136.png" 
                   alt="Aditi Haresh Talekar"
                   className="w-full h-full object-cover"
                 />
