@@ -26,9 +26,7 @@ export const Hero = () => {
         <div className="mb-8">
           
         </div>
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 bg-clip-text text-transparent">
-          Hi, I'm Aditi Haresh Talekar
-        </h1>
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 bg-clip-text text-transparent">Hi, I'm Aditi Talekar</h1>
         <div className="text-xl md:text-2xl text-gray-600 mb-8 h-8">
           {text}<span className="animate-pulse">|</span>
         </div>
