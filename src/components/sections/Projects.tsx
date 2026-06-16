@@ -1,45 +1,50 @@
-
 import { Button } from "@/components/ui/button";
 
 export const Projects = () => {
   const projects = [
     {
+      title: "Rootly",
+      description:
+        "AI-powered personalized EdTech platform with structured roadmaps, AI tutoring, quizzes, progress tracking, and tailored learning recommendations.",
+      tech: ["React", "TypeScript", "Tailwind CSS", "FastAPI", "Supabase", "Gemini", "Groq"],
+      type: "AI / EdTech",
+    },
+    {
+      title: "AI Interview Bot",
+      description:
+        "AI-powered candidate assessment and mock interview platform that conducts voice-based interviews, evaluates responses against job requirements, and generates automated feedback reports.",
+      tech: ["React", "Flask", "Supabase", "Groq Llama-3.3", "Web Speech API"],
+      type: "AI Platform",
+    },
+    {
+      title: "RapidReach",
+      description:
+        "AI-powered last-mile navigation platform that converts vague addresses into precise coordinates using NLP, multilingual voice support, visual intelligence, and a 7-step fallback system.",
+      tech: ["React", "Flask", "Llama 3.3", "NLTK", "OpenStreetMap"],
+      type: "AI / NLP",
+    },
+    {
+      title: "Real-Time AI Fitness Trainer",
+      description:
+        "AI-powered desktop app that tracks workout posture, counts reps, and gives real-time form feedback for squats, planks, and push-ups.",
+      tech: ["Python", "OpenCV", "MediaPipe", "NumPy"],
+      type: "AI Project",
+    },
+    {
       title: "FarmIQ Soil Guardian",
-      description: "Industry-guided IoT project to analyze soil conditions using advanced sensors and data analytics.",
+      description:
+        "Industry-guided IoT project to monitor and analyze soil health using sensors for optimized farming.",
       company: "Vision InfoTech",
-      tech: ["IoT", "Python", "Data Analytics"],
-      type: "Industry Project"
+      tech: ["IoT", "Arduino", "Python", "Data Analytics"],
+      type: "Industry Project",
     },
     {
-      title: "PharmaFlow App",
-      description: "Online medicine delivery application with user-friendly interface and secure payment integration.",
-      tech: ["Java", "Android", "Firebase"],
-      type: "Mobile App"
+      title: "Developer Pairing Platform",
+      description:
+        "Hackathon-winning full-stack platform that matches developers for collaboration with real-time chat, project boards, and smart filtering.",
+      tech: ["React", "Node.js", "Socket.io", "MongoDB"],
+      type: "Web App",
     },
-    {
-      title: "Developer Pairing App",
-      description: "Full-stack matchmaking platform for coders featuring real-time chat, project boards, and filtering.",
-      tech: ["React", "Node.js", "Socket.io"],
-      type: "Web App"
-    },
-    {
-      title: "Productivity Dashboard",
-      description: "Streamlit-based task manager with Pomodoro timer, book/blog lists, and analytics.",
-      tech: ["Python", "Streamlit", "SQLite"],
-      type: "Web App"
-    },
-    {
-      title: "Gesture-Controlled Drawing Canvas",
-      description: "Draw using hand gestures with Python, OpenCV, and MediaPipe for real-time tracking.",
-      tech: ["Python", "OpenCV", "MediaPipe"],
-      type: "AI Project"
-    },
-    {
-      title: "AI Fitness Trainer",
-      description: "Real-time form correction using OpenCV and pose detection for proper exercise execution.",
-      tech: ["Python", "OpenCV", "AI/ML"],
-      type: "AI Project"
-    }
   ];
 
   return (
@@ -60,7 +65,7 @@ export const Projects = () => {
               <div className="p-6">
                 <div className="flex justify-between items-start mb-3">
                   <h3 className="text-xl font-semibold text-gray-800">{project.title}</h3>
-                  <span className="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded-full">
+                  <span className="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded-full whitespace-nowrap ml-2">
                     {project.type}
                   </span>
                 </div>

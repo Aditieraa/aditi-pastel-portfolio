@@ -1,32 +1,65 @@
-
 export const Skills = () => {
   const skills = [
-    { name: "Java", category: "Programming" },
-    { name: "Python", category: "Programming" },
-    { name: "PHP", category: "Programming" },
-    { name: "JavaScript", category: "Programming" },
-    { name: "C/C++", category: "Programming" },
-    { name: "ReactJS", category: "Frontend" },
-    { name: "HTML/CSS", category: "Frontend" },
-    { name: "MySQL", category: "Database" },
-    { name: "MongoDB", category: "Database" },
-    { name: "SQL", category: "Database" },
-    { name: "UI/UX Design", category: "Design" },
-    { name: "Graphic Design", category: "Design" },
-    { name: "Business Analysis", category: "Business" },
-    { name: "Marketing", category: "Business" },
-    { name: "Leadership", category: "Soft Skills" },
-    { name: "Time Management", category: "Soft Skills" }
+    { name: "JavaScript (ES6+)", category: "Languages" },
+    { name: "TypeScript", category: "Languages" },
+    { name: "Python", category: "Languages" },
+    { name: "Java", category: "Languages" },
+    { name: "C++", category: "Languages" },
+
+    { name: "React.js", category: "Frameworks & Libraries" },
+    { name: "Next.js (SSR/SSG)", category: "Frameworks & Libraries" },
+    { name: "Three.js", category: "Frameworks & Libraries" },
+    { name: "D3.js", category: "Frameworks & Libraries" },
+    { name: "Flutter", category: "Frameworks & Libraries" },
+    { name: "HTML5", category: "Frameworks & Libraries" },
+
+    { name: "Tailwind CSS", category: "UI / Styling" },
+    { name: "CSS Modules", category: "UI / Styling" },
+    { name: "Styled Components", category: "UI / Styling" },
+    { name: "Bootstrap", category: "UI / Styling" },
+
+    { name: "Machine Learning", category: "AI / Machine Learning" },
+    { name: "Deep Learning", category: "AI / Machine Learning" },
+    { name: "NLP", category: "AI / Machine Learning" },
+    { name: "LLM Integration", category: "AI / Machine Learning" },
+    { name: "Prompt Engineering", category: "AI / Machine Learning" },
+    { name: "AI-Powered Web & Mobile Apps", category: "AI / Machine Learning" },
+
+    { name: "MySQL", category: "Databases" },
+    { name: "MongoDB", category: "Databases" },
+    { name: "Supabase", category: "Databases" },
+    { name: "SQL", category: "Databases" },
+
+    { name: "Git", category: "Tools & Platforms" },
+    { name: "GitHub", category: "Tools & Platforms" },
+    { name: "GitLab", category: "Tools & Platforms" },
+    { name: "Docker", category: "Tools & Platforms" },
+    { name: "Firebase", category: "Tools & Platforms" },
+    { name: "Postman", category: "Tools & Platforms" },
+    { name: "Vercel", category: "Tools & Platforms" },
+    { name: "Render", category: "Tools & Platforms" },
+    { name: "Linux", category: "Tools & Platforms" },
+    { name: "Arduino (IoT)", category: "Tools & Platforms" },
+    { name: "Power BI", category: "Tools & Platforms" },
+    { name: "Tableau", category: "Tools & Platforms" },
+    { name: "Jupyter Notebook", category: "Tools & Platforms" },
   ];
 
-  const categories = ["Programming", "Frontend", "Database", "Design", "Business", "Soft Skills"];
-  const categoryColors = {
-    "Programming": "from-purple-400 to-purple-600",
-    "Frontend": "from-pink-400 to-pink-600",
-    "Database": "from-blue-400 to-blue-600",
-    "Design": "from-green-400 to-green-600",
-    "Business": "from-yellow-400 to-yellow-600",
-    "Soft Skills": "from-indigo-400 to-indigo-600"
+  const categories = [
+    "Languages",
+    "Frameworks & Libraries",
+    "UI / Styling",
+    "AI / Machine Learning",
+    "Databases",
+    "Tools & Platforms",
+  ];
+  const categoryColors: Record<string, string> = {
+    "Languages": "from-purple-400 to-purple-600",
+    "Frameworks & Libraries": "from-pink-400 to-pink-600",
+    "UI / Styling": "from-rose-400 to-rose-600",
+    "AI / Machine Learning": "from-indigo-400 to-indigo-600",
+    "Databases": "from-blue-400 to-blue-600",
+    "Tools & Platforms": "from-teal-400 to-teal-600",
   };
 
   return (
@@ -40,14 +73,16 @@ export const Skills = () => {
             <div key={category} className="mb-8">
               <h3 className="text-2xl font-semibold mb-4 text-gray-800">{category}</h3>
               <div className="flex flex-wrap gap-3">
-                {skills.filter(skill => skill.category === category).map((skill) => (
-                  <div
-                    key={skill.name}
-                    className={`px-4 py-2 rounded-full bg-gradient-to-r ${categoryColors[category as keyof typeof categoryColors]} text-white font-medium hover:scale-105 transition-transform cursor-pointer`}
-                  >
-                    {skill.name}
-                  </div>
-                ))}
+                {skills
+                  .filter((skill) => skill.category === category)
+                  .map((skill) => (
+                    <div
+                      key={skill.name}
+                      className={`px-4 py-2 rounded-full bg-gradient-to-r ${categoryColors[category]} text-white font-medium hover:scale-105 transition-transform cursor-pointer`}
+                    >
+                      {skill.name}
+                    </div>
+                  ))}
               </div>
             </div>
           ))}
