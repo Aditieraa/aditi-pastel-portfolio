@@ -9,6 +9,7 @@ import { Achievements } from "@/components/sections/Achievements";
 import { Contact } from "@/components/sections/Contact";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { MusicPlayer } from "@/components/MusicPlayer";
 
 const Index = () => {
   return (
@@ -23,6 +24,7 @@ const Index = () => {
       <Achievements />
       <Contact />
       <Footer />
+      <MusicPlayer />
     </div>
   );
 };
