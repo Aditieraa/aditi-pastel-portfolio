@@ -10,8 +10,9 @@ export const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-gray-700 leading-relaxed">
-                Hi! I'm Aditi Haresh Talekar, an IT Engineer passionate about building elegant and intuitive digital experiences. 
-                With strong technical foundations, creative UI/UX skills, and leadership abilities, I craft solutions that blend design with function.
+                Hi! I'm Aditi Haresh Talekar, an IT Engineer passionate about building elegant, AI-powered digital experiences.
+                I work across full-stack web, mobile, and machine learning — blending strong technical foundations with creative UI/UX
+                to ship products that feel intuitive and intelligent.
               </p>
               <div className="space-y-4">
                 <h3 className="text-2xl font-semibold text-purple-600">Education</h3>
@@ -19,15 +20,21 @@ export const About = () => {
                   <div className="p-4 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg">
                     <h4 className="font-semibold text-gray-800">Bachelor of Engineering in Information Technology</h4>
                     <p className="text-gray-600">Datta Meghe College of Engineering, Airoli</p>
-                    <p className="text-sm text-gray-500">Mumbai University • 2026 (Expected)</p>
+                    <p className="text-sm text-gray-500">Aug 2024 – Present • CGPA: 8.56</p>
                   </div>
                   <div className="p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg">
                     <h4 className="font-semibold text-gray-800">Diploma in Information Technology</h4>
                     <p className="text-gray-600">Vidyalankar Polytechnic, Wadala</p>
-                    <p className="text-sm text-gray-500">2023 • 89.19%</p>
+                    <p className="text-sm text-gray-500">Jun 2021 – Jun 2024 • 89.19%</p>
+                  </div>
+                  <div className="p-4 bg-gradient-to-r from-pink-50 to-purple-50 rounded-lg">
+                    <h4 className="font-semibold text-gray-800">SSC (10th)</h4>
+                    <p className="text-gray-600">Sahakar Vidya Prasarak Mandal English Medium Secondary School, Kalwa</p>
+                    <p className="text-sm text-gray-500">May 2021 • 88.60%</p>
                   </div>
                 </div>
               </div>
+
             </div>
             <div className="flex justify-center">
               <div className="w-80 h-80 rounded-full overflow-hidden shadow-lg">

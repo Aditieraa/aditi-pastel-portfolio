@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 export const Hero = () => {
   const [text, setText] = useState("");
-  const fullText = "IT Engineer | Creative Technologist | Developer";
+  const fullText = "IT Engineer | AI/ML Developer | Full-Stack Builder";
   useEffect(() => {
     let index = 0;
     const timer = setInterval(() => {
@@ -31,10 +31,10 @@ export const Hero = () => {
           {text}<span className="animate-pulse">|</span>
         </div>
         <div className="flex justify-center space-x-6 mb-12">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/50 hover:bg-white/80 transition-all hover:scale-110">
+          <a href="https://github.com/Aditieraa" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/50 hover:bg-white/80 transition-all hover:scale-110">
             <Github className="w-6 h-6 text-gray-700" />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/50 hover:bg-white/80 transition-all hover:scale-110">
+          <a href="https://www.linkedin.com/in/aditi-talekar-27a142262/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/50 hover:bg-white/80 transition-all hover:scale-110">
             <Linkedin className="w-6 h-6 text-gray-700" />
           </a>
           <a href="mailto:adititalekar2005@gmail.com" className="p-3 rounded-full bg-white/50 hover:bg-white/80 transition-all hover:scale-110">

@@ -1,24 +1,34 @@
-
 import { Button } from "@/components/ui/button";
 
 export const Experience = () => {
   const experiences = [
     {
-      company: "Vision InfoTech",
-      position: "Intern",
-      duration: "2024",
-      type: "Mobile App Development & Robotic IoT Project",
-      description: "Worked on FarmIQ Soil Guardian project, developing IoT solutions for soil analysis and mobile app development.",
-      skills: ["IoT Development", "Mobile Apps", "Data Analytics", "Project Management"]
+      company: "Ross Warner HR Solutions",
+      position: "AI/ML and Business Development Executive Intern",
+      duration: "Dec 2025 – Jan 2026",
+      type: "AI/ML & Business Development",
+      description:
+        "Built an AI-powered recruitment platform with CV screening, JD generation, and AI pre-screening interviews. Deployed a full-stack web app to streamline hiring workflows, designed an internal dashboard for real-time team tracking, and managed multiple client leads to drive business growth.",
+      skills: ["AI/ML", "Full-Stack Development", "Dashboard Design", "Lead Generation"],
     },
     {
-      company: "Vigilant ProTech",
-      position: "Intern",
-      duration: "2023",
-      type: "IT Security Project",
-      description: "Contributed to IT security initiatives, learning about cybersecurity practices and implementation.",
-      skills: ["Cybersecurity", "Risk Assessment", "Security Protocols", "Technical Documentation"]
-    }
+      company: "Vision InfoTech",
+      position: "IoT & Smart Agriculture Project Intern",
+      duration: "Mar 2024 – Apr 2024",
+      type: "IoT & Smart Agriculture",
+      description:
+        "Completed an industry-guided project titled FarmIQ Soil Guardian — an IoT-based system to monitor and analyze soil health for optimized farming.",
+      skills: ["IoT", "Arduino", "Data Analytics", "Smart Agriculture"],
+    },
+    {
+      company: "Vision InfoTech",
+      position: "SDE Intern",
+      duration: "Jun 2023 – Jul 2023",
+      type: "Software Development",
+      description:
+        "Built a Java desktop app for an ISP to manage customer registration, billing, and service plans. Designed user-friendly UIs using Java Swing and optimized MySQL databases for efficient data handling.",
+      skills: ["Java", "Java Swing", "MySQL", "Desktop App Development"],
+    },
   ];
 
   return (
@@ -40,7 +50,7 @@ export const Experience = () => {
                       <p className="text-purple-600 font-medium">{exp.company}</p>
                       <p className="text-sm text-gray-500">{exp.type}</p>
                     </div>
-                    <span className="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">
+                    <span className="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm whitespace-nowrap">
                       {exp.duration}
                     </span>
                   </div>
