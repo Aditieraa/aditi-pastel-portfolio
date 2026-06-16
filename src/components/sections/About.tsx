@@ -1,3 +1,4 @@
+import profileAsset from "@/assets/profile.png.asset.json";
 
 export const About = () => {
   return (
@@ -37,9 +38,10 @@ export const About = () => {
 
             </div>
             <div className="flex justify-center">
-              <div className="w-80 h-80 rounded-full overflow-hidden shadow-lg">
-                <img 
-                  src="/lovable-uploads/df48652d-a721-4551-aa5b-b936d6619136.png" 
+              <div className="relative w-80 h-80 rounded-full overflow-hidden shadow-2xl ring-4 ring-purple-200 hover:scale-105 transition-transform duration-500 animate-fade-in">
+                <div className="absolute inset-0 bg-gradient-to-tr from-purple-400/20 to-pink-400/20 z-10 pointer-events-none" />
+                <img
+                  src={profileAsset.url}
                   alt="Aditi Haresh Talekar"
                   className="w-full h-full object-cover"
                 />

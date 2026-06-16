@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import resumeAsset from "@/assets/resume.pdf.asset.json";
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,12 +38,13 @@ export const Navigation = () => {
               </button>
             ))}
           </div>
-          <Button 
-            onClick={() => window.open("/resume.pdf", "_blank")}
-            className="bg-gradient-to-r from-purple-400 to-pink-400 hover:from-purple-500 hover:to-pink-500 text-white"
-          >
-            Resume
-          </Button>
+          <a href={resumeAsset.url} download="Aditi_Talekar_Resume.pdf">
+            <Button
+              className="bg-gradient-to-r from-purple-400 to-pink-400 hover:from-purple-500 hover:to-pink-500 text-white hover:scale-105 transition-transform"
+            >
+              Resume
+            </Button>
+          </a>
         </div>
       </div>
     </nav>
